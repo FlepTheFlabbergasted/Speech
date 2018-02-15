@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Speech Test</title>
+
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Filip Strandberg">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Google CDN for jQuery -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  
+  <!-- To use google icons -->		
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <script type="text/javascript" src="audioInput.js"></script>
+
+<script>
+  /*window.addEventListener('keydown', function (e){
+    var mouth = document.getElementById("mouth");
+    if(e.keyCode == 40){
+      //$("#mouth").animate({top: "61.5%"}, 50);
+      $("#mouth").animate({top: "+=50px"}, 50);
+    }
+  });
+  
+  window.addEventListener('keyup', function (e){
+    var mouth = document.getElementById("mouth");
+    if(e.keyCode == 40){
+      $("#mouth").animate({top: "57.6%"}, 50);
+    }
+  });*/
+</script>
+  
+<style>
+  body {
+    font-family: calibri;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+
+  .container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: inline-block;
+  }
+  
+  #face {
+    width: 200px;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  
+  #mouth {
+    width: 56px;
+    position: absolute;
+    top: 152px;
+    left: 20px;
+  }
+  
+  #myAudio {
+    display: block;
+    margin: auto;
+  }
+  
+  #myButton {
+    width: 10%;
+    margin: auto;
+    display: block;
+    margin-top: 10%;
+  }
+</style>
+  
+</head>
+<body>
+  <h1>Say Hello!</h1>
+  <div class="container">
+    <img id="face" src="face.png">
+    <img id="mouth" src="mouth.png">
+  </div>
+  <button id="myButton">Play song</button>
+  <!-- <audio controls id="myAudio">
+    <source src="fakkingsrs.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio> -->
+</body>
+</html>
+
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script> -->
+    <!-- <button id="button_listen" onclick="annyang.start()">Click to start listening!</button> -->
+<!--
+if (annyang) {
+  // Let's define our first command. First the text we expect, and then the function it should call
+  var commands = {
+    'hello': function() { 
+      alert('Hello world!');
+    }   
+  };
+  // Add our commands to annyang
+  annyang.addCommands(commands);
+  annyang.start();
+}
+else{
+  console.log("Annyang not defined");
+} -->
