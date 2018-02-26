@@ -151,5 +151,6 @@ function drawLoop( time ) {
 }
 
 function resetMouth(){
-  $("#mouth").css("top", " 77.5%");
+  //$("#mouth").css("top", " 77.5%");
+  $("#mouth").css("top", " 85%");
 }
